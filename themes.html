@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  
+    <title>Doctissimo Redesign</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#">Doctissimo</a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="row">
+          <ul class="nav navbar-nav">
+          <!--<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Doctissimo<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Se connecter</a></li>
+              <li><a href="#">Devenir membre</a></li>
+            </ul>
+          </li>-->
+          <li><a href="">Chat</a></li>
+          <div class="btn-group">
+              <button type="button" class="btn btn-default">Club Doctissimo</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Se connecter</a></li>
+                <li><a href="#">Devenir membre</a></li>
+              </ul>
+            </div>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Rechercher un médicament ou  un article">
+            </div>
+            <button type="submit" class="btn btn-default">Rechercher</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+          <!--<button type="button" class="btn btn-default navbar-btn">Sign in</button>-->
+            <li><a href="">BeautyLab by doctissimo</a></li>
+            <li><a href="">DoctiPharma</a></li>
+            <li><a href="">MonDocteur</a></li>
+          </ul>
+        </div>
+        <div class="row">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="themes.html">Thèmes</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Forum<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vidéos</a></li>
+            <li><a href="">Tests</a></li>
+          </ul>
+        </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid">
+      <!-- Single button -->
+      <div class="btn-group filter-button-group">
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".healthy" style="background:#204275; color:#FFFFFF;">Santé</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".medications" style="background:#4C8E3C; color:#FFFFFF;">Médicaments</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".pregnancy" style="background:#E03B7B; color:#FFFFFF;">Grossesse</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".baby" style="background:#DB3373; color:#FFFFFF;">Bébé</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".beauty" style="background:#88335E; color:#FFFFFF;">Beauté</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".fitness" style="background:#EDA924; color:#FFFFFF;">Forme</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".nutrition" style="background:#329A48; color:#FFFFFF;">Nutrition</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".recipes" style="background:#83B83D; color:#FFFFFF;">Recettes</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".family" style="background:#4EB1CA; color:#FFFFFF;">Famille</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".animal" style="background:#366E82; color:#FFFFFF;">Animaux</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".psychology" style="background:#913F81; color:#FFFFFF;">Psycho</button>
+        <button type="button" class="btn btn-lg btn-default active" data-filter=".sexuality" style="background:#CD264D; color:#FFFFFF;">Sexo</button>
+      </div>
+      <div class="row grid">
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Actualités</h3>
+            <img src="img/actualite.jpg" alt="actualite" class="img-rounded img-responsive">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Maux Quotidiens</h3>
+            <img src="img/douleur.jpg" alt="hurt" class="img-rounded img-responsive">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Votre Santé</h3>
+            <img src="img/sante.jpg" alt="health" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Maladies</h3>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Santé de la Femme</h3>
+            <img src="img/femme.jpg" alt="woman" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Santé de l'enfant</h3>
+            <img src="img/child.jpg" alt="child" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Santé de l'Homme</h3>
+            <img src="img/homme.jpg" alt="man" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Médecines Douces</h3>
+            <img src="img/lavande.jpg" alt="homeopathie" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Addictions</h3>
+            <img src="img/addiction.jpg" alt="drugs" class="img-rounded">
+        </div>
+        <div class="element-item healthy col-sm-4 col-md-4 col-lg-4" data-category="healthy">
+          <h3 class="title-healthy">Vos droits</h3>
+            <img src="img/droits.jpg" alt="rights" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Allergologie</h3>
+            <img src="img/medicaments.jpeg" alt="treatment" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Contraception</h3>
+            <img src="img/contraception.jpg" alt="contraception" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Antalgiques</h3>
+            <img src="img/cephalees.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Remèdes naturels</h3>
+            <img src="img/cedre.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Digestif</h3>
+            <img src="img/fibres.jpg" alt="digestive" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Dermatologie</h3>
+            <img src="img/peau.png" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Cardiologie</h3>
+            <img src="img/coeur.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item medications col-sm-4 col-md-4 col-lg-4" data-category="medications">
+          <h3 class="title-medications">Cancérologie</h3>
+            <img src="img/cancer.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Ma Grossesse</h3>
+            <img src="img/grossesse.jpg" alt="pregnant" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Envie d'enfant</h3>
+            <img src="img/bebe.jpg" alt="bebe" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Suis-je enceinte?</h3>
+            <img src="img/enceinte.jpg" alt="pregnant" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Infertilité</h3>
+            <img src="img/infertilite.jpg" alt="infertility" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Neuf Mois</h3>
+            <img src="img/mois.jpg" alt="pregnant" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Démarches</h3>
+            <img src="img/travail.jpg" alt="pregnant" class="img-rounded">
+        </div>
+        <div class="element-item pregnancy col-sm-4 col-md-4 col-lg-4" data-category="pregnancy">
+          <h3 class="title-pregnancy">Accouchement</h3>
+            <img src="img/accouchement.jpg" alt="pregnant" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Naissance de Bébé</h3>
+            <img src="img/ne.jpg" alt="infant" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Soins de Bébé</h3>
+            <img src="img/care.jpg" alt="care" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Alimentation</h3>
+            <img src="img/alimentation.jpg" alt="meal" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Allaitement</h3>
+            <img src="img/allaitement.jpeg" alt="feeding" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Puericulture</h3>
+            <img src="img/room.jpg" alt="room" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Santé de Bébé</h3>
+            <img src="img/fever.jpg" alt="fever" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Eveil de Bébé</h3>
+            <img src="img/eveil.jpg" alt="awakening" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Vaccins</h3>
+            <img src="img/vaccin.jpg" alt="vaccine" class="img-rounded">
+        </div>
+        <div class="element-item baby col-sm-4 col-md-4 col-lg-4" data-category="baby">
+          <h3 class="title-baby">Prénoms</h3>
+            <img src="img/name.jpg" alt="name" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Coiffure</h3>
+            <img src="img/hairs.jpg" alt="hairs" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Soins du visage</h3>
+            <img src="img/face.jpg" alt="face" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Soins du corps</h3>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Soins des cheveux</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Maquillage</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Beauté naturelle</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Chirurgie Esthétique</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Soins des Ongles</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Mariage</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Bronzage</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Tatouages</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Beauté Ethnique</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item beauty col-sm-4 col-md-4 col-lg-4" data-category="beauty">
+          <h3 class="title-beauty">Beauté Masculine</h3>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item fitness col-sm-4 col-md-4 col-lg-4" data-category="fitness">
+          <h3 class="title-fitness">Fitness</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item fitness col-sm-4 col-md-4 col-lg-4" data-category="fitness">
+          <h3 class="title-fitness">6 mois pour mincir</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item fitness col-sm-4 col-md-4 col-lg-4" data-category="fitness">
+          <h3 class="title-fitness">Yoga</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item nutrition col-sm-4 col-md-4 col-lg-4" data-category="nutrition">
+          <h3 class="title-nutrition">Régimes</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item nutrition col-sm-4 col-md-4 col-lg-4" data-category="nutrition">
+          <h3 class="title-nutrition">Alimentation et Santé</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item nutrition col-sm-4 col-md-4 col-lg-4" data-category="nutrition">
+          <h3 class="title-nutrition">Bien manger à tout âge</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item recipes col-sm-4 col-md-4 col-lg-4" data-category="recipes">
+          <h3 class="title-recipes">Fruits et Légumes de saison</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item recipes col-sm-4 col-md-4 col-lg-4" data-category="recipes">
+          <h3 class="title-recipes">Recettes de saison</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item recipes col-sm-4 col-md-4 col-lg-4" data-category="recipes">
+          <h3 class="title-recipes">Cuisine japonaise</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item family col-sm-4 col-md-4 col-lg-4" data-category="family">
+          <h3 class="title-family">Relations familiales</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item family col-sm-4 col-md-4 col-lg-4" data-category="family">
+          <h3 class="title-family">Educations</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item family col-sm-4 col-md-4 col-lg-4" data-category="family">
+          <h3 class="title-family">Scolarité</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item animal col-sm-4 col-md-4 col-lg-4" data-category="animal">
+          <h3 class="title-animal">Chats</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item animal col-sm-4 col-md-4 col-lg-4" data-category="animal">
+          <h3 class="title-animal">Chiens</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item animal col-sm-4 col-md-4 col-lg-4" data-category="animal">
+          <h3 class="title-animal">Lapins</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item psychology col-sm-4 col-md-4 col-lg-4" data-category="psychology">
+          <h3 class="title-psychology">Amour et Vie de couple</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item psychology col-sm-4 col-md-4 col-lg-4" data-category="psychology">
+          <h3 class="title-psychology">Dictionnaire des rêves</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item psychology col-sm-4 col-md-4 col-lg-4" data-category="psychology">
+          <h3 class="title-psychology">Bien dormir</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+        <div class="element-item sexuality col-sm-4 col-md-4 col-lg-4" data-category="sexuality">
+          <h3 class="title-sexuality">Kamasutra</h3>
+            <p class=""></p>
+            <img src="img/coeur.jpg" alt="heart" class="img-rounded">
+        </div>
+        <div class="element-item sexuality col-sm-4 col-md-4 col-lg-4" data-category="sexuality">
+          <h3 class="title-sexuality">Tout savoir sur le sexe</h3>
+            <p class=""></p>
+            <img src="img/cephalees.jpg" alt="headache" class="img-rounded">
+        </div>
+        <div class="element-item sexuality col-sm-4 col-md-4 col-lg-4" data-category="sexuality">
+          <h3 class="title-sexuality">Sexualité de la femme</h3>
+            <p class=""></p>
+            <img src="img/consultation.jpg" alt="medecine" class="img-rounded">
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--Isotope-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

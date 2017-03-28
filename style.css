@@ -1,0 +1,135 @@
+/* General  */
+
+a:link {
+    color : black;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+
+
+/*     Page themes   */
+
+
+img {
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h3 {
+    text-align: center;
+    margin-top : 8px;
+}
+
+.element-item {
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px #555;
+    /*background : #f4f4f7;*/
+    position : relative;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin : 5px;
+    /*padding : 5px;*/
+}
+
+.healthy {
+    border : 2px solid #204275;
+}
+
+.title-healthy {
+    border-bottom : 1px solid #204275;
+}
+
+.medications {
+    border : 2px solid #4C8E3C;
+}
+
+.title-medications {
+    border-bottom : 1px solid #4C8E3C;
+}
+
+.pregnancy {
+    border : 2px solid #E03B7B;
+}
+
+.title-pregnancy {
+    border-bottom : 1px solid #E03B7B;
+}
+
+.baby {
+    border : 2px solid #DB3373;
+}
+
+.title-baby {
+    border-bottom : 2px solid #DB3373;
+}
+
+.beauty {
+    border : 2px solid #88335E;
+}
+
+.title-beauty {
+    border-bottom : 2px solid #88335E;
+}
+
+.fitness {
+    border : 2px solid #EDA924;
+}
+
+.title-fitness {
+    border-bottom : 2px solid #EDA924;
+}
+
+.nutrition {
+    border : 2px solid #329A48;
+}
+
+.title-nutrition {
+    border-bottom : 2px solid #329A48;
+}
+
+.recipes {
+    border : 2px solid #83B83D;
+}
+
+.title-recipes {
+    border-bottom : 2px solid #83B83D;
+}
+
+.family {
+    border : 2px solid #4EB1CA;
+}
+
+.title-family {
+    border-bottom : 2px solid #4EB1CA;
+}
+
+.animal {
+    border : 2px solid #366E82;
+}
+
+.title-animal {
+    border-bottom : 2px solid #366E82;
+}
+
+.psychology {
+    border : 2px solid #913F81;
+}
+
+.title-psychology {
+    border-bottom : 2px solid #913F81;
+}
+
+.sexuality {
+    border : 2px solid #CD264D;
+}
+
+.title-sexuality {
+    border-bottom : 2px solid #CD264D;
+}
+
+/*   Page themes */
