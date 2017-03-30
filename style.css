@@ -59,11 +59,14 @@ h3 {
     width: 250px;
     height: 250px;
     margin : 5px;
-    /*padding : 5px;*/
 }
 
 .element-item:hover {
     box-shadow: 2px 2px 30px #222;
+}
+
+.element-item > h3 {
+    height : 53px;
 }
 
 .element-item-image {
