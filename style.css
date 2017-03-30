@@ -46,6 +46,7 @@ h3 {
 }
 
 .element-item {
+    transition: box-shadow 0.2s ease-in-out;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #555;
     /*background : #f4f4f7;*/
