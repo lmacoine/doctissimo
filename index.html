@@ -7,7 +7,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
-  
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
     <title>Doctissimo Redesign!</title>
     
     <!-- Bootstrap -->
@@ -20,80 +21,260 @@
     <![endif]-->
   </head>
   <body>
-
-    <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
+  <!-- header -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
+      <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="#">Doctissimo</a>
+        <a class="navbar-brand" href="#" style="color:#94B5D4; font-size: 280%;">Doctissimo</a>
       </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="row">
-          <ul class="nav navbar-nav">
-          <!--<li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Club Doctissimo<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Se connecter</a></li>
-              <li><a href="#">Devenir membre</a></li>
-            </ul>
-          </li>-->
-          <li><a href="">Chat</a></li>
-          <div class="btn-group">
-              <button type="button" class="btn btn-default">Club Doctissimo</button>
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="caret"></span>
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a href="#">Se connecter</a></li>
-                <li><a href="#">Devenir membre</a></li>
+          <!-- Header 1 -->
+          <div class="container-header-1">  
+          <!-- Header Planet -->
+            <div class="doc-menu-planet">
+              <ul class="nav navbar-nav">
+                <li><a href="http://chat.doctissimo.fr/" style="color:#FFFFFF;">Chat</a></li>
+                <li class="dropdown">
+                  <a href="http://club.doctissimo.fr/" class="dropdown-toggle" data-toggle="dropdown" style="color:#FFFFFF;">Club Doctissimo<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                  <li><a href="https://moncompte.doctissimo.fr/login.html" style="color:#5993c6;">Se connecter</a></li>
+                  <li><a href="http://club.doctissimo.fr/inscription.html" style="color:#5993c6;">Devenir Membre</a></li>
+                  </ul>
+                </li>
               </ul>
             </div>
-          </ul>
-          <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Rechercher un médicament ou  un article">
+            <!-- Header Brand -->
+            <div class="doc-menu-brand">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.doctissimo.fr/beaute/beautylab" style="color:#FFFFFF;"><img src="img/beautylab.png" style="height:30px;"></a></li>
+                <li><a href="http://www.doctipharma.fr/" style="color:#FFFFFF;"><img src="img/doctipharma.png" style="height:28px;"></a></li>
+                <li><a href="https://www.mondocteur.fr/" style="color:#FFFFFF;"><img src="img/mondocteur.png" style="height:18px;"></a></li>
+              </ul>
             </div>
-            <button type="submit" class="btn btn-default">Rechercher</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-          <!--<button type="button" class="btn btn-default navbar-btn">Sign in</button>-->
-            <li><a href="">BeautyLab by doctissimo</a></li>
-            <li><a href="">DoctiPharma</a></li>
-            <li><a href="">MonDocteur</a></li>
-          </ul>
+          </div>
         </div>
         <div class="row">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="themes.html">Thèmes</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Forum<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
+          <div class="container-header-2">
+            <!-- Search -->
+            <div>
+              <form action="http://recherche.doctissimo.fr/search/consult5/index.php?mid=394b3a88b319a4bbff17ca59532ea229&l=fr&rub=ON" class="navbar-form navbar-left" role="search">
+                <!--<div class="form-group">
+                  <label class="doc-selected" for="doc-search-text">Un article</label><br>
+                  <label class="doc-selected" for="doc-search-text">Un médicament</label><br>
+                  <input type="text" class="form-control" placeholder="médicament ou article">
+                </div>-->
+                <button type="submit" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-search" arria-hidden="true"></span></button>
+              </form>
+            </div>
+            <!-- Tabs -->
+            <div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html" style="color:#FFFFFF;">Accueil</a></li>
+                <li><a href="themes.html" style="color:#FFFFFF;">Thèmes</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#FFFFFF;">Forum<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li class="forum-link"><a href="http://forum.doctissimo.fr/" style="border-left:4px solid #204275;color:#204275;">Santé</a></li>
+                      <li><a href="http://forum.doctissimo.fr/grossesse-bebe/liste_categorie.htm" style="border-left:4px solid #F696BA;color:#F696BA;">Grossesse - Bébé</a></li>
+                      <li><a href="http://forum.doctissimo.fr/mode/liste_categorie.htm" style="border-left:4px solid #7F7668;color:#7F7668;">Mode</a></li>
+                      <li><a href="http://forum.doctissimo.fr/forme-beaute/liste_categorie.htm" style="border-left:4px solid #88335E;color:#88335E;">Forme - Beauté</a></li>
+                      <li><a href="http://forum.doctissimo.fr/nutrition/liste_categorie.htm" style="border-left:4px solid #329A48;color:#329A48;">Nutrition</a></li>
+                      <li><a href="http://forum.doctissimo.fr/psychologie/liste_categorie.htm" style="border-left:4px solid #913F81;color:#913F81;">Psychologie</a></li>
+                      <li><a href="http://forum.doctissimo.fr/doctissimo/liste_categorie.htm" style="border-left:4px solid #CD264D;color:#CD264D;">Sexualité</a></li>
+                      <li><a href="http://forum.doctissimo.fr/loisirs/liste_categorie.htm" style="border-left:4px solid #4863BE;color:#4863BE;">Loisirs</a></li>
+                      <li><a href="http://forum.doctissimo.fr/people-stars/liste_categorie.htm" style="border-left:4px solid #E3975E;color:#E3975E;">People</a></li>
+                      <li><a href="http://forum.doctissimo.fr/medicaments/liste_categorie.htm" style="border-left:4px solid #4C8E3C;color:#4C8E3C;">Médicaments</a></li>
+                      <li><a href="http://forum.doctissimo.fr/forme-sport/liste_categorie.htm" style="border-left:4px solid #EDA924;color:#EDA924;">Forme - Sport</a></li>
+                      <li><a href="http://forum.doctissimo.fr/viepratique/liste_categorie.htm" style="border-left:4px solid #71C0D4;color:#71C0D4;">Vie Pratique</a></li>
+                      <li><a href="http://forum.doctissimo.fr/animaux/liste_categorie.htm" style="border-left:4px solid #366E82;color:#366E82;">Animaux</a></li>
+                      <li><a href="http://forum.doctissimo.fr/famille/liste_categorie.htm" style="border-left:4px solid #DD392F;color:#DD392F;">Famille</a></li>
+                      <li><a href="http://forum.doctissimo.fr/cuisine/liste_categorie.htm" style="border-left:4px solid #83B83D;color:#83B83D;">Cuisine</a></li>
+                      <li><a href="http://forum.doctissimo.fr/environnement/liste_categorie.htm" style="border-left:4px solid #6AA8B8;color:#6AA8B8;">Environnement</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="http://videos.doctissimo.fr/" style="color:#FFFFFF;">Vidéos</a></li>
+                  <li><a href="http://test.doctissimo.fr/" style="color:#FFFFFF;">Tests</a></li>
                 </ul>
-            </li>
-            <li><a href="#">Vidéos</a></li>
-            <li><a href="">Tests</a></li>
-          </ul>
-        </div>
+              </div>
+            </div>
+          </div>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
-    
+  <!-- carousel -->
+
+    <div class="container">
+      <div class="row">
+        <div class="hidden-xs col-sm-12">
+          <div class="carousel slide" id="my-slider" data-ride="carousel">
+            <!-- indicators / dot nav -->
+            <ol class="carousel-indicators">
+              <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#my-slider" data-slide-to="1"></li>
+              <li data-target="#my-slider" data-slide-to="2"></li>
+            </ol>
+            <!-- wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <a href="http://www.doctissimo.fr/forme/diaporamas/posture-de-yoga-postures-yoga"><img class="carouselImg" src="img/yoga1.png" alt="sante"></a>
+                <div class="carousel-caption">
+                  <h1>Ma séance de yoga : les 60 postures clés</h1>
+                </div>
+              </div>
+              <div class="item">
+                <a href="http://diaporamas.doctissimo.fr/bebe/comment-voit-votre-bebe-mois-par-mois/"><img class="carouselImg" src="img/carousel2.jpg" alt="sante"></a>
+                <div class="carousel-caption">
+                  <h1>Comment voit votre bébé au fil des mois?</h1>
+                </div>
+              </div>
+              <div class="item">
+                <a href="http://diaporamas.doctissimo.fr/nutrition/recette-burger-maison/"><img class="carouselImg" src="img/burger.jpg" alt="sante"></a>
+                <div class="carousel-caption">
+                  <h1>10 recettes de burgers maison</h1>
+                </div>
+              </div>
+            </div>
+            <!-- controls / next and prev btn -->
+            <a href="#my-slider" class="left carousel-control" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>        
+            <a href="#my-slider" class="right carousel-control" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- the experts -->
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="experts"><h2>Nos Experts</h2></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pic-experts">
+            <a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/florian-scotte" target="_blank"><img class="photo-experts" src="img/florian-scotte.jpg" alt="florian-scotte"></a>
+            <h4>Dr Florian Scotté</h4>
+            <h5>Spécialité : Soins de support </h5>
+            <p class="text-justify">Médecin oncologue praticien hospitalier, le Dr Florian Scotté est responsable de l’Unité fonctionnelle de soins oncologiques de support à l’Hôpital Européen Georges Pompidou, Assistance Publique – Hôpitaux de Paris.
+            <span style="font-weight:bolder"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/florian-scotte" target="_blank">Lire l'article</a></span></p>
+          </div>
+          <div class="col-md-4 pic-experts">
+            <a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/christophe-de-jaeger" target="_blank"><img class="photo-experts" src="img/christophe-de-jaeger.jpg" alt="christophe-de-jaeger"></a>
+            <h4>Dr Christophe de Jaeger</h4>
+            <h5>Spécialité : Longévité et gériatrie</h5>
+            <p class="text-justify">Christophe de Jaeger est l’un des pionniers en Europe de cette médecine qui prône une lutte active contre le vieillissement humain et son corollaire naturel de maladies.
+            <span style="font-weight:bolder"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/christophe-de-jaeger" target="_blank">Lire l'article</a></span></p>
+          </div>
+          <div class="col-md-4 pic-experts">
+            <a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/christophe-lequart" target="_blank"><img class="photo-experts" src="img/christophe-lequart.jpg" alt="christophe-lequart"></a>
+            <h4>Dr Christophe Lequart</h4>
+            <h5>Spécialité : Santé bucco-dentaire</h5>
+            <p class="text-justify">Chirurgien dentiste libéral et porte-parole grand public de l’UFSBD (Union Française pour la Santé Bucco-Dentaire), le Dr Christophe Lequart s’est investi dans la formation continue dès son installation. 
+            <span style="font-weight:bolder"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/christophe-lequart" target="_blank">Lire l'article</a></span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 pic-experts">
+            <a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/marc-leveque" target="_blank"><img class="photo-experts" src="img/marc-leveque.jpg" alt="marc-leveque"></a>
+            <h4>Dr Marc Lévêque</h4>
+            <h5>Spécialité : Neurochirurgie - Douleur</h5>
+            <p class="text-justify">Neurochirurgien à l’hôpital de la Pitié-Salpêtrière à Paris, le Dr Marc Lévêque s’est spécialisé en neurochirurgie fonctionnelle et et tout particulièrement dans la chirurgie de la douleur, la radiochirurgie et la psychochirurgie.
+            <span style="font-weight:bolder"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/marc-leveque" target="_blank">Lire l'article</a></span></p>
+          </div>
+          <div class="col-md-4 pic-experts">
+            <a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/regine-le-sann" target="_blank"><img class="photo-experts" src="img/regine-le-sann.jpg" alt="regine-le-sann"></a>
+            <h4>Dr Régine Le Sann</h4>
+            <h5>Spécialité : Santé animale – Généraliste</h5>
+            <p class="text-justify">Diplômée de l’Ecole Vétérinaire de Nantes en 1985, le Dr Régine Le Sann est Docteur Vétérinaire. Installée depuis 1997 dans une clinique en association à Paris, elle exerce sa profession en clientèle canine.
+            <span style="font-weight:bolder"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/regine-le-sann" target="_blank">Lire l'article</a></span></p>
+          </div>
+          <div class="col-md-4 pic-experts">
+            <a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/anny-cohen-letessier" target="_blank" ><img class="photo-experts" src="img/anny-cohen-letessier.jpg" alt="anny-cohen-letessier"></a>
+            <h4>Dr Anny Cohen-Letessier</h4>
+            <h5>Spécialité : Dermatologie</h5>
+            <p class="text-justify">Diplômée de la Faculté de Montpellier, Anny Cohen-Letessier a réalisé sa spécialité en dermatologie-vénérologie à l’Hôpital Saint-Louis (Paris). Au cours de sa carrière, elle a eu diverses responsabilités dans l’enseignement. Actuellement, elle exerce en cabinet libéral à Paris.
+            <span style="font-weight:bolder"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo/anny-cohen-letessier" target="_blank">Lire l'article</a></span></p>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col-md-4 col-md-push-8"><span id="link-experts"><a href="http://www.doctissimo.fr/equipe/les-experts-de-doctissimo">Tous nos experts <span class="fa fa-angle-right" aria-hidden="true"></span></a></span>
+          </div>
+        </div>
+      </div>
+
+  <!-- footer -->
+
+      <footer class="footer">
+        <div class="container footer">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Contact</h3>
+              <a class="footer-text" href="http://www.doctissimo.fr/asp/webmestre/visu_index.asp">Contacter la rédaction</a><br>
+              <a class="footer-text" href="http://www.doctissimo.fr/equipe/doctissimo/annonceurs">Contacter la régie</a><br>
+            </div>
+            <div class="col-md-3">
+              <h3>Le Site</h3>
+              <a class="footer-text" href="http://www.doctissimo.fr/equipe/doctissimo/doctissimo">Qui sommes-nous ?</a><br>
+              <a class="footer-text" href="http://www.doctissimo.fr/equipe/charte/site">Charte d'utilisation</a><br>
+            </div>
+            <div class="col-md-3">
+              <ul class="ending">
+                <h3>Le groupe</h3>
+                <li><a class="footer-text" href="http://www.doctissimo.com/es">Doctissimo España</a><br></li>
+                <li><a class="footer-text" href="http://www.doctissimo.it/">Doctissimo Italia</a><br></li>
+                <li><a class="footer-text" href="http://www.lagardere.com/">Lagardère</a><br></li>
+                <li><a class="footer-text" href="https://www.mondocteur.fr/">Mon docteur</a><br></li>
+                <li><a class="footer-text" href="http://www.doctipharma.fr/?xtor=AL-159-%5Btype_affilie%5D-%5Bnom_affilie%5D&utm_source=effiliation_id_affilie&utm_medium=deeplink&utm_campaign=effiliation_generique">DoctiPharma</a><br><br></li>
+              </ul>
+            </div>
+            <div class="col-md-3 text-center">
+              <div class="end">
+                <ul class="end">
+                  <h3>Réseaux Sociaux</h3>
+                  <li><span class="fa-stack fa-lg fa-2x">
+                    <i class="fa fa-circle fa-stack-2x" id="fa-facebookID"></i>
+                    <a class="icons" target="_blank" href="https://www.facebook.com/doctissimo"><i class="fa fa-facebook fa-stack-1x"></i></a>
+                  </span></li>
+                  <li><span class="fa-stack fa-lg fa-2x">
+                    <i class="fa fa-circle fa-stack-2x" id="fa-twitterID"></i>
+                    <a class="icons" target="_blank" href="https://twitter.com/doctissimo"><i class="fa  fa-twitter fa-stack-1x" aria-hidden="true"></i></a>
+                  </span></li>
+                  <li><span class="fa-stack fa-lg fa-2x">
+                    <i class="fa fa-circle fa-stack-2x" id="fa-googleID"></i>
+                    <a class="icons" target="_blank" href="https://plus.google.com/+Doctissimo"><i class="fa fa-google-plus fa-stack-1x" aria-hidden="true"></i></a>
+                  </span></li>
+                  <li><span class="fa-stack fa-lg fa-2x">
+                    <i class="fa fa-circle fa-stack-2x" id="fa-youtubeID"></i>            
+                    <a class="icons" target="_blank" href="https://www.youtube.com/user/Doctissimo?utm_source=Doctissimo&utm_medium=encart_col_droite&utm_content=chaine&utm_campaign="><i class="fa fa-youtube fa-stack-1x" aria-hidden="true"></i></a>
+                  </span></li>              
+                  <li><span class="fa-stack fa-lg fa-2x">
+                    <i class="fa fa-circle fa-stack-2x" id="fa-pinterestID"></i>            
+                    <a class="icons" target="_blank" href="https://fr.pinterest.com/doctissimo/"><i class="fa fa-pinterest fa-stack-1x" aria-hidden="true"></i></a>
+                  </span></li>
+                </ul>
+              </div>
+            </div>
+        </div> <!--row -->
+      </div> <!-- container footer -->
+    </footer>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

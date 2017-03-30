@@ -1,3 +1,13 @@
+html {
+    background-color: #597A99;
+}
+/* Navbar   */
+
+.navbar {
+    background-color: #5993c6;
+}
+
+
 /* General  */
 
 a:link {
@@ -5,7 +15,17 @@ a:link {
 }
 
 a:hover {
-    color: lightblue;
+    color: #FFFFFF;
+}
+
+.forum-link:hover {
+    background-color : #204275 !important;
+    color : #FFFFFF !important;
+}
+
+/*Tabs*/
+.caret {
+    color : #FFFFFF;
 }
 
 
@@ -24,6 +44,11 @@ h3 {
     margin-top : 8px;
 }
 
+
+.select {
+    padding : 30px;
+}
+
 .element-item {
     border-radius: 5px;
     box-shadow: 1px 1px 12px #555;
@@ -39,6 +64,10 @@ h3 {
 .element-item-image {
     background-size: cover;
     height: 160px;
+}
+
+.all {
+    border : 2px solid #000000;
 }
 
 .healthy {
@@ -138,3 +167,120 @@ h3 {
 }
 
 /*   Page themes */
+
+
+
+
+
+
+
+/* RAJOUTé BY THOMAS */ 
+
+
+/* Carousel */
+
+/*#myCarousel {
+    width: 600px;
+    height: 350px;
+}*/
+div .item a {
+    color: white;
+}
+
+/* Photo experts */
+
+.photo-experts {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: 42%;
+    margin-top: 10px;
+}
+
+h4, h5  {
+    text-align: center;
+}
+
+#experts {
+    text-align: center;
+    text-transform: uppercase;
+}
+#link-experts {
+    font-size: 14px;
+    float: right;
+    position: relative;
+    bottom: 35px;
+    text-decoration: none;
+}
+#link-experts a {
+    color: black;
+}
+/*Footer*/
+
+.footer {
+    background-color: #597A99;
+    position: relative;
+    margin-bottom: 0px;
+    clear:both;
+    padding-top:20px;
+    padding-bottom: 5px;
+    color: white;
+    margin-top: 20px;
+} 
+.footer-text {
+    color: white;
+    text-align: center;
+}
+.fa-facebook {
+    color: white; /*changer la couleur*/
+}
+#fa-facebookID {
+    color: #3B5998;
+}
+.fa-twitter {
+    color: white; /*changer la couleur*/
+}
+#fa-twitterID {
+    color: #5ABBE7;
+}
+.fa-google-plus {
+    color: white;
+}
+#fa-googleID {
+    color: #E16F61;
+}
+.fa-youtube {
+    color: white;
+}
+#fa-youtubeID {
+    color: #F54C56;
+}
+.fa-pinterest {
+    color: white;
+}
+#fa-pinterestID {
+    color: #FA2E2E;
+}
+
+span.fa-stack:hover {
+    opacity: .8;
+}
+
+ul.end {
+    list-style: none;
+    /*border: 1px black solid;*/
+}
+ul.end > li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+/*    padding-right: 10px;
+*/}
+ul.ending > li{
+    padding-top: 10px;
+    padding-right: 15px;
+}
+ul.ending {
+    /*border: 1px black solid;*/
+}
+
