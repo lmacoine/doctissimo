@@ -10,12 +10,8 @@ html {
 
 /* General  */
 
-a:link {
+a {
     color : black;
-}
-
-a:hover {
-    color: #FFFFFF;
 }
 
 .forum-link:hover {
@@ -51,7 +47,7 @@ h3 {
 
 .element-item {
     border-radius: 5px;
-    box-shadow: 1px 1px 12px #555;
+    box-shadow: 1px 1px 5px #555;
     /*background : #f4f4f7;*/
     position : relative;
     float: left;
@@ -59,6 +55,10 @@ h3 {
     height: 250px;
     margin : 5px;
     /*padding : 5px;*/
+}
+
+.element-item:hover {
+    box-shadow: 2px 2px 30px #222;
 }
 
 .element-item-image {
